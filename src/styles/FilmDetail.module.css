@@ -1,0 +1,27 @@
+.filmDetailContainer {
+    padding: 20px;
+  }
+  
+  .characterList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .characterList li {
+    text-align: center;
+  }
+  
+  .characterList img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .characterList p {
+    margin: 5px 0;
+  }
+  

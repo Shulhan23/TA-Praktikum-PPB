@@ -1,0 +1,22 @@
+.filmListContainer {
+    padding: 20px;
+  }
+  
+  .filmList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filmList li {
+    margin: 10px 0;
+  }
+  
+  .filmList a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .filmList a:hover {
+    text-decoration: underline;
+  }
+  

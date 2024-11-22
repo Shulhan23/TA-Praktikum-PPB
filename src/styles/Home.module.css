@@ -1,0 +1,74 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://cdn.wallpapersafari.com/43/12/Gqa1xi.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+  
+  /* Overlay untuk efek transparansi */
+  .home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay warna hitam dengan opacity 40% */
+    z-index: 1; /* Layer di atas background tetapi di bawah konten */
+  }
+  
+  /* Konten utama */
+  .home-title,
+  .home-subtitle,
+  .home-buttons {
+    position: relative; /* Pastikan konten berada di atas overlay */
+    z-index: 2; /* Lapisan konten di atas overlay */
+  }
+  
+  /* Judul utama */
+  .home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Subtitle */
+  .home-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  /* Tombol navigasi */
+  .home-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .home-button {
+    background-color: #007bff; /* Biru */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3; /* Biru lebih gelap saat hover */
+    transform: scale(1.1); /* Efek zoom saat hover */
+  }
+  

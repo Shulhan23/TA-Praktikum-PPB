@@ -1,0 +1,107 @@
+/* src/styles/Favorites.module.css */
+.favoritesContainer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.favoritesContainer h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.favoritesContainer ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.favoritesContainer li {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; /* Ensure each card takes up full height within the grid */
+}
+
+.favoritesContainer li:hover {
+    transform: scale(1.05);
+}
+
+.favoritesContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.favoritesContainer h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #555;
+}
+
+/* Ensure the "View Details" link appears above the "Remove" button */
+.favoritesContainer .linkBack {
+    display: block;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: auto;
+    padding-top: 10px;
+}
+
+.favoritesContainer .linkBack:hover {
+    text-decoration: underline;
+}
+
+/* Style for the "Remove" button to stay at the bottom */
+.favoritesButton {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    margin-top: 10px; 
+    width: 100%;
+    align-self: flex-end; /* Place at the bottom of flex container */
+}
+
+.favoritesButton:hover {
+    background-color: #c0392b;
+}
+
+.noFavorites {
+    font-size: 1.5rem;
+    color: #888;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Back link styling */
+.linkBack {
+    display: block;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.linkBack:hover {
+    text-decoration: underline;
+}
